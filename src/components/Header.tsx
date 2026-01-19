@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
     return (
         <header className="flex flex-col sm:flex-row items-center sm:items-start gap-4 p-4 sm:p-6">
@@ -13,26 +15,26 @@ export default function Header() {
                 </h1>
 
                 <nav className="flex text-xs sm:text-sm md:text-base gap-3 sm:gap-4 mt-2 text-[var(--secondary-text)]">
-                    <a
-                        href="/"
+                    <Link
+                        to="/"
                         className="hover:text-white hover:underline transition-colors duration-200"
                     >
                         home
-                    </a>
+                    </Link>
                     <span className="text-[var(--secondary-text)]">|</span>
-                    <a
-                        href="/about"
+                    <Link
+                        to="/about"
                         className="hover:text-white hover:underline transition-colors duration-200"
                     >
                         about
-                    </a>
+                    </Link>
                     <span className="text-[var(--secondary-text)]">|</span>
-                    <a
-                        href="/more"
+                    <Link
+                        to="/more"
                         className="hover:text-white hover:underline transition-colors duration-200"
                     >
                         coming soon ..
-                    </a>
+                    </Link>
                 </nav>
             </div>
         </header>
